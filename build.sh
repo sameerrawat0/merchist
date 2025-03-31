@@ -2,20 +2,6 @@
 
 pip install -r requirements.txt
 
-
-# Create .env file
-cat <<EOT > .env
-SECRET_KEY=3w7qyl@ft%=!ch\$e+hbk#gb_6-063=#-dzjyw)7awtresffv^^
-DEBUG=True
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_HOST_USER=youremailaddress@gmail.com
-EMAIL_HOST_PASSWORD=yourStrongPassword
-EMAIL_USE_TLS=True
-EOT
-
-
-
 # Add other build commands (e.g., Django migrations, collectstatic)
 python manage.py collectstatic --noinput
 python manage.py migrate

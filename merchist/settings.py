@@ -14,7 +14,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # Security
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)  # ⚠️ Default to False for production
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1').split(',')  # ⚠️ Use env vars
+ALLOWED_HOSTS = ['*']  # ⚠️ Use env vars
 
 # Apps
 INSTALLED_APPS = [
